@@ -1,0 +1,64 @@
+<main *ngIf="mostrar">
+    <input type="button" class="btn btn-outline-success" value="Registrarse">
+    <div class="medio">
+        <div class="container" id="caj">
+            <div class="img">
+                <img src="./assets/img/fondo2.png">
+            </div>
+            <div class="login-content">
+                <form action="index.html" method="GET">
+                    <!--<img src="img/avatar.svg">-->
+                    <h2 class="title">Welcome</h2>
+                    <div class="input-div one">
+                        <div class="i">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="div">
+                            <h5>Usuario</h5>
+                            <input type="text" class="input" #usuario placeholder="Usuario" required>
+                        </div>
+                    </div>
+                    <div class="input-div pass">
+                        <div class="i">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <div class="div">
+                            <h5>Contraseña</h5>
+                            <input type="password" class="input" #contrasena placeholder="Contraseña" required>
+                        </div>
+                    </div>
+                    <a href="#">¿Olvido su contraseña?</a>
+                    <input type="button" class="btnn" (click)="verificar(usuario.value, contrasena.value)" value="Iniciar sesión">
+                </form>
+            </div>
+        </div>
+    
+
+
+
+
+
+
+
+
+        <!--<form action="" method="GET">
+            <i class="fas fa-user"></i>
+            <div class="user">
+                <label for="usuario_id">Usuario</label>
+                <input type="text" class="form-control" style="width: 90%;" placeholder="Usuario" id="usuario_id" name="usuario_n">
+            </div>
+    
+            <div class="pass">
+                <label for="contraseña_id">Contraseña</label>
+                <input type="password" class="form-control" style="width: 90%;" placeholder="Contraseña" id="contraseña_id" name="contraseña_n">
+            </div>
+
+            <div>
+                <a href="#"><i>¿Olvidaste tu contraseña?</i></a>
+                <input type="submit" value="Iniciar sesion" class="btn btn-outline-success">
+            </div>
+        </form>-->
+        <footer>Bazar Chilon</footer>
+    </div>
+
+</main>
